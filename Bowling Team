@@ -1,0 +1,30 @@
+player_score = {"Sam": 200, "Bill": 125, "Mary":235, "Jane": 205, "Sue": 280}
+
+for i,v in player_score.items():
+    print(i,v)
+
+reverse_dict = {}
+
+for i,v in player_score.items():
+    reverse_dict[v] = i
+print()
+
+for i in sorted(reverse_dict, reverse = True):
+   print(reverse_dict[i],i)
+
+print()
+
+for i in sorted(player_score):
+   print(i, player_score[i])
+
+print()
+
+combined_score = 1045 
+num_players = 5
+
+ave_score = combined_score / num_players
+
+
+print("congrat to", i, "with a high score:",v)
+print("Sorry to",reverse_dict.get(200),"who got the lowest of score:", player_score.get("Sam"))
+print("The team average score: ", ave_score)
